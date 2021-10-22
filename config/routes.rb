@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  # get "/tutorials" => "tutorials#index"
-  # # post "/login" => "sessions#create"
+  post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
+
+  get "/tutorials" => "tutorials#index"
+  post "/tutorials" => "tutorials#create"
+
+  post "/ratings" => "ratings#create"
 end
