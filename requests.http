@@ -18,3 +18,20 @@ Content-Type: application/json
   "password": "password"
 }
 
+### TUTORIALS INDEX
+GET http://localhost:3000/tutorials
+Content-Type: application/json
+
+### TUTORIALS CREATE 
+POST http://localhost:3000/tutorials
+Content-Type: application/json
+
+{
+  "user_id": 2,
+  "description": "Requests.http test desc.",
+  "hyperlink": "https://tenor.com/bEF4U.gif" 
+}
+
+### RATINGS CREATE
+POST http://localhost:3000/ratings
+Content-Type: application/json

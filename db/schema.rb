@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2021_10_15_174005) do
 
   create_table "tutorials", force: :cascade do |t|
     t.integer "user_id"
-    t.string "hyperlink"
     t.text "description"
+    t.string "hyperlink"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -8,3 +8,7 @@
 
 User.create(user_name: "cminnie", email: "cminnie@test.com", password: "password")
 User.create(user_name: "tester", email: "atester@test.com", password: "password")
+
+Tutorial.create(user_id: "1", description: "Ruby on Rails", hyperlink: "https://rubyonrails.org")
+Tutorial.create(user_id: "1", description: "Intro to Ruby", hyperlink: "https://www.ruby-lang.org/en/")
+Tutorial.create(user_id: "2", description: "Intro to Vue.js", hyperlink: "https://rubyonrails.org")
