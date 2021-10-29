@@ -1,7 +1,7 @@
 class TutorialsController < ApplicationController
   def index
     tutorials = Tutorial.all
-    render json: tutorials.as_json
+    render json: tutorials
   end
 
   def create
@@ -11,6 +11,6 @@ class TutorialsController < ApplicationController
       hyperlink: params[:hyperlink],
     )
     tutorial.save
-    render json: tutorial.as_json
+    render json: tutorial
   end
 end

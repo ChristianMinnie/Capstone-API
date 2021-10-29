@@ -8,6 +8,6 @@ class RatingsController < ApplicationController
       description: params[:description],
     )
     rating.save
-    render json: rating.as_json
+    render json: rating
   end
 end
