@@ -1,0 +1,2 @@
+class TutorialLanguage < ApplicationRecord
+end
