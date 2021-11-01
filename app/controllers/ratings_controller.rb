@@ -1,4 +1,9 @@
 class RatingsController < ApplicationController
+  def index
+    rating = Rating.all
+    render json: rating
+  end
+
   def create
     rating = Rating.new(
       tutorial_id: params[:tutorial_id],

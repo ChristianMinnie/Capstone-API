@@ -32,6 +32,10 @@ Content-Type: application/json
   "hyperlink": "https://tenor.com/bEF4U.gif" 
 }
 
+# ### RATINGS INDEX
+# GET http://localhost:3000/ratings
+# Content-Type: application/json
+
 ### RATINGS CREATE
 POST http://localhost:3000/ratings
 Content-Type: application/json
