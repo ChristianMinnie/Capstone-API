@@ -4,6 +4,11 @@ class TutorialsController < ApplicationController
     render json: tutorials
   end
 
+  def show
+    tutorial = Tutorial.find_by(id: params[:id])
+    render json: tutorial
+  end
+
   def create
     tutorial = Tutorial.new(
       user_id: params[:user_id],

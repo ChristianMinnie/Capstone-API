@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   get "/tutorials" => "tutorials#index"
+  get "/tutorials/:id" => "tutorials#show"
   post "/tutorials" => "tutorials#create"
 
-  post "/ratings" => "ratings#create"
   # get "/ratings" => "ratings#index"
+  post "/ratings" => "ratings#create"
 end
