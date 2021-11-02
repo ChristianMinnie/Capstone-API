@@ -7,7 +7,7 @@ class RatingsController < ApplicationController
   def create
     rating = Rating.new(
       tutorial_id: params[:tutorial_id],
-      user_id: params[:user_id],
+      user_id: current_user.id,
       uxp_rating: params[:uxp_rating],
       content_rating: params[:content_rating],
       description: params[:description],

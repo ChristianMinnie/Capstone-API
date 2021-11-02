@@ -11,7 +11,7 @@ class TutorialsController < ApplicationController
 
   def create
     tutorial = Tutorial.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       description: params[:description],
       hyperlink: params[:hyperlink],
     )
