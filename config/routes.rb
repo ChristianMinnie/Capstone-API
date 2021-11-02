@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   post "/sessions" => "sessions#create"
 
+  get "/topics" => "topics#index"
+  get "/languages" => "languages#index"
+
   get "/tutorials" => "tutorials#index"
   get "/tutorials/:id" => "tutorials#show"
   post "/tutorials" => "tutorials#create"

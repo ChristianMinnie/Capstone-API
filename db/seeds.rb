@@ -24,8 +24,8 @@ Request.create(user_id: 1, topic_id: 3, language_id: 2, description: "Need a int
 Request.create(user_id: 3, topic_id: 3, language_id: 2, description: "Want a Vue.js CRUD app how-to")
 
 Topic.create(name: "Web Dev")
+Topic.create(name: "Web Design")
 Topic.create(name: "Game Dev")
-Topic.create(name: "web Design")
 
 Language.create(name: "Ruby")
 Language.create(name: "JavaScript")

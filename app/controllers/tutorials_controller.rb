@@ -16,6 +16,16 @@ class TutorialsController < ApplicationController
       hyperlink: params[:hyperlink],
     )
     tutorial.save
+    # loop through the array of topic indexes params[:topic_ids]
+    # ...topic_id = params[:topic_id][index]
+    #     TopicTutorial.create(topic_id: topic_id, tutorial_id: tutorial.id)
+    index = 0
+    while index < params[:topic_ids].length
+      topic_id = params[:topic_id][index]
+      TopicTutorial.create(topic_id: topic_id, tutorial_id: tutorial.id)
+    end
+    puts "GONNA LOOP..."
+    pp params
     render json: tutorial
   end
 end
