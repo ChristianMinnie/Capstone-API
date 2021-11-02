@@ -3,4 +3,6 @@ class TutorialSerializer < ActiveModel::Serializer
   belongs_to :user
 
   has_many :ratings
+  has_many :topics
+  has_many :languages
 end
