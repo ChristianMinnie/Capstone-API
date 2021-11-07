@@ -46,3 +46,11 @@ Content-Type: application/json
 ### RATINGS CREATE
 POST http://localhost:3000/ratings
 Content-Type: application/json
+
+### TOPICS CREATE
+POST http://localhost:3000/topics
+Content-Type: application/json
+
+### LANGUAGES INDEX
+GET http://localhost:3000/languages
+Content-Type: application/json

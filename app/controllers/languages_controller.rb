@@ -1,6 +1,6 @@
 class LanguagesController < ApplicationController
   def index
-    languages = Language.all
-    render json: languages
+    language = Language.all
+    render json: language
   end
 end
