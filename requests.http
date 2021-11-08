@@ -1,3 +1,4 @@
+
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU4NzM1ODJ9.fgrzBtI1ZGXYm4zBRgA8fct7Hs4vc0gqdvHkLGMPP9A
 @host = http://localhost:3000
 
