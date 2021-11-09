@@ -17,4 +17,12 @@ class Tutorial < ApplicationRecord
     end
     result / ratings.length.to_f
   end
+
+  def content_average_rating
+    result = 0
+    ratings.each do |rating|
+      result = rating.content_rating + result
+    end
+    result / ratings.length.to_f
+  end
 end
