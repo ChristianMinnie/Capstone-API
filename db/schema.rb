@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 2021_10_29_165240) do
   create_table "ratings", force: :cascade do |t|
     t.integer "tutorial_id"
     t.integer "user_id"
-    t.integer "uxp_rating"
-    t.integer "content_rating"
+    t.float "uxp_rating"
+    t.float "content_rating"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

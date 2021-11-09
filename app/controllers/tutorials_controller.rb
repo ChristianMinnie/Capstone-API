@@ -6,7 +6,7 @@ class TutorialsController < ApplicationController
 
   def show
     tutorial = Tutorial.find_by(id: params[:id])
-    render json: tutorial
+    render json: tutorial, include: "ratings.user"
   end
 
   def create
