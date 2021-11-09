@@ -4,6 +4,9 @@ class CreateTutorials < ActiveRecord::Migration[6.1]
       t.integer :user_id
       t.text :description
       t.string :hyperlink
+      t.string :image
+      t.string :title
+
       t.timestamps
     end
   end

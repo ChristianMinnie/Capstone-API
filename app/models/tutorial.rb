@@ -9,4 +9,12 @@ class Tutorial < ApplicationRecord
   def topics_string
     topics.map { |topic| topic.name }.join(" ")
   end
+
+  def uxp_average_rating
+    result = 0
+    ratings.each do |rating|
+      result = rating.uxp_rating + result
+    end
+    result / ratings.length.to_f
+  end
 end

@@ -10,12 +10,17 @@ class TutorialsController < ApplicationController
   end
 
   def create
+    object = LinkThumbnailer.generate(params[:hyperlink])
+
     tutorial = Tutorial.new(
       user_id: current_user.id,
-      description: params[:description],
+      description: object.description,
       hyperlink: params[:hyperlink],
+      title: object.title,
+      image: object.images.first&.src.to_s,
     )
     tutorial.save
+
     # loop through the array of topic indexes params[:topic_ids]
     # ...topic_id = params[:topic_id][index]
     #     TopicTutorial.create(topic_id: topic_id, tutorial_id: tutorial.id)

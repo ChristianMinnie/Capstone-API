@@ -64,6 +64,8 @@ ActiveRecord::Schema.define(version: 2021_10_29_165240) do
     t.integer "user_id"
     t.text "description"
     t.string "hyperlink"
+    t.string "image"
+    t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

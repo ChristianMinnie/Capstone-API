@@ -10,9 +10,13 @@ User.create(user_name: "cminnie", email: "cminnie@test.com", password: "password
 User.create(user_name: "tester", email: "atester@test.com", password: "password")
 User.create(user_name: "test2", email: "second@test.com", password: "password")
 
-Tutorial.create(user_id: 1, description: "Ruby on Rails", hyperlink: "https://rubyonrails.org")
-Tutorial.create(user_id: 1, description: "Intro to Ruby", hyperlink: "https://www.ruby-lang.org/en/")
-Tutorial.create(user_id: 2, description: "Intro to Vue.js", hyperlink: "https://rubyonrails.org")
+object = LinkThumbnailer.generate("https://rubyonrails.org")
+Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
+object = LinkThumbnailer.generate("https://www.ruby-lang.org/en/")
+pp object.images
+Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
+object = LinkThumbnailer.generate("https://vuejs.org/v2/guide")
+Tutorial.create(user_id: 2, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 
 Rating.create(tutorial_id: 1, user_id: 1, uxp_rating: 5, content_rating: 4, description: "Excellent")
 Rating.create(tutorial_id: 1, user_id: 2, uxp_rating: 3, content_rating: 4, description: "Good")
