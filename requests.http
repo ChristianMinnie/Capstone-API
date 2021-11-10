@@ -22,7 +22,7 @@ Content-Type: application/json
   "password": "password"
 }
 
-### TUTORIALS INDEX
+### 
 GET http://localhost:3000/tutorials
 Content-Type: application/json
 
