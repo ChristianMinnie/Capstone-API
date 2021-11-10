@@ -79,6 +79,9 @@ Tutorial.create(user_id: 2, description: object.description, hyperlink: object.u
 # 22
 object = LinkThumbnailer.generate("https://academy.zenva.com/product/game-design-academy/")
 Tutorial.create(user_id: 3, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
+# 23
+object = LinkThumbnailer.generate("https://webflow.com/blog/web-design-for-beginners")
+Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 
 Rating.create(tutorial_id: 1, user_id: 1, uxp_rating: 5, content_rating: 4, description: "Excellent")
 Rating.create(tutorial_id: 1, user_id: 2, uxp_rating: 3, content_rating: 4, description: "Good")
