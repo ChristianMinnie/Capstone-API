@@ -120,8 +120,9 @@ Language.create(name: "C#")
 
 TopicTutorial.create(topic_id: 1, tutorial_id: 1)
 TopicTutorial.create(topic_id: 2, tutorial_id: 1)
-TopicTutorial.create(topic_id: 3, tutorial_id: 3)
 TopicTutorial.create(topic_id: 1, tutorial_id: 2)
+TopicTutorial.create(topic_id: 3, tutorial_id: 3)
+TopicTutorial.create(topic_id: 2, tutorial_id: 4)
 
 TutorialLanguage.create(language_id: 1, tutorial_id: 1)
 TutorialLanguage.create(language_id: 1, tutorial_id: 2)
