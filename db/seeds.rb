@@ -13,73 +13,96 @@ User.create(user_name: "test3", email: "third@test.com", password: "password3")
 User.create(user_name: "test4", email: "fourth@test.com", password: "password4")
 
 # 1
+puts "Tutorial #1"
 object = LinkThumbnailer.generate("https://rubyonrails.org")
 Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 2
-object = LinkThumbnailer.generate("https://www.ruby-lang.org/en/")
+puts "Tutorial #2"
+object = LinkThumbnailer.generate("https://www.ruby-lang.org/en")
 pp object.images
 Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 3
+puts "Tutorial #3"
 object = LinkThumbnailer.generate("https://vuejs.org/v2/guide")
 Tutorial.create(user_id: 2, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 4
+puts "Tutorial #4"
 object = LinkThumbnailer.generate("https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics")
 Tutorial.create(user_id: 3, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 5
+puts "Tutorial #5"
 object = LinkThumbnailer.generate("https://www.w3schools.com/js/DEFAULT.asp")
 Tutorial.create(user_id: 3, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 6
-object = LinkThumbnailer.generate("https://javascript.info/")
+puts "Tutorial #6"
+object = LinkThumbnailer.generate("https://javascript.info")
 Tutorial.create(user_id: 3, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 7
+puts "Tutorial #7"
 object = LinkThumbnailer.generate("https://www.codecademy.com/learn/learn-html")
 Tutorial.create(user_id: 4, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 8
+puts "Tutorial #8"
 object = LinkThumbnailer.generate("https://developer.mozilla.org/en-US/docs/Web/HTML")
 Tutorial.create(user_id: 4, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 9
+puts "Tutorial #9"
 object = LinkThumbnailer.generate("https://www.coderepublics.com/HTML/html-tutorial.php")
 Tutorial.create(user_id: 4, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 10
+puts "Tutorial #10"
 object = LinkThumbnailer.generate("https://www.tutorialspoint.com/css/index.htm")
 Tutorial.create(user_id: 4, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 11
+puts "Tutorial #11"
 object = LinkThumbnailer.generate("https://www.codecademy.com/learn/learn-css")
 Tutorial.create(user_id: 4, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 12
-object = LinkThumbnailer.generate("https://www.freecodecamp.org/news/get-started-with-css-in-5-minutes-e0804813fc3e/")
+puts "Tutorial #12"
+object = LinkThumbnailer.generate("https://www.freecodecamp.org/news/get-started-with-css-in-5-minutes-e0804813fc3e")
 Tutorial.create(user_id: 5, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 13
-object = LinkThumbnailer.generate("https://www.w3schools.com/bootstrap4/")
+puts "Tutorial #13"
+object = LinkThumbnailer.generate("https://www.w3schools.com/bootstrap4")
 Tutorial.create(user_id: 5, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 14
+puts "Tutorial #14"
 object = LinkThumbnailer.generate("https://github.com/mdbootstrap/Bootstrap-tutorial-for-beginners")
 Tutorial.create(user_id: 5, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 15
+puts "Tutorial #15"
 object = LinkThumbnailer.generate("https://www.codecademy.com/learn/learn-vue-js")
 Tutorial.create(user_id: 2, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 16
+puts "Tutorial #16"
 object = LinkThumbnailer.generate("https://www.tutorialspoint.com/vuejs/index.htm")
 Tutorial.create(user_id: 2, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 17
-object = LinkThumbnailer.generate("https://guides.github.com/activities/hello-world/")
+puts "Tutorial #17"
+object = LinkThumbnailer.generate("https://www.analyticsvidhya.com/blog/2021/09/git-and-github-tutorial-for-beginners/")
 Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 18
+puts "Tutorial #18"
 object = LinkThumbnailer.generate("https://www.educative.io/blog/git-github-tutorial-beginners")
 Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 19
-object = LinkThumbnailer.generate("https://neurosys.com/why-people-say-unity-engine-is-bad/")
+puts "Tutorial #19"
+object = LinkThumbnailer.generate("https://neurosys.com/why-people-say-unity-engine-is-bad")
 Tutorial.create(user_id: 2, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 20
-object = LinkThumbnailer.generate("https://learn.unity.com/")
+puts "Tutorial #20"
+object = LinkThumbnailer.generate("https://learn.unity.com")
 Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 21
-object = LinkThumbnailer.generate("https://www.gamedesigning.org/learn/unity/")
+puts "Tutorial #21"
+object = LinkThumbnailer.generate("https://www.gamedesigning.org/learn/unity")
 Tutorial.create(user_id: 2, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 22
-object = LinkThumbnailer.generate("https://academy.zenva.com/product/game-design-academy/")
+puts "Tutorial #22"
+object = LinkThumbnailer.generate("https://academy.zenva.com/product/game-design-academy")
 Tutorial.create(user_id: 3, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 # 23
+puts "Tutorial #23"
 object = LinkThumbnailer.generate("https://webflow.com/blog/web-design-for-beginners")
 Tutorial.create(user_id: 1, description: object.description, hyperlink: object.url, title: object.title, image: object.images.first&.src.to_s)
 
@@ -109,6 +132,32 @@ Topic.create(name: "Version Control")
 Topic.create(name: "Web Design")
 Topic.create(name: "Game Dev")
 
+TopicTutorial.create(topic_id: 1, tutorial_id: 1)
+TopicTutorial.create(topic_id: 2, tutorial_id: 1)
+TopicTutorial.create(topic_id: 1, tutorial_id: 2)
+TopicTutorial.create(topic_id: 1, tutorial_id: 3)
+TopicTutorial.create(topic_id: 2, tutorial_id: 3)
+TopicTutorial.create(topic_id: 1, tutorial_id: 4)
+TopicTutorial.create(topic_id: 1, tutorial_id: 5)
+TopicTutorial.create(topic_id: 1, tutorial_id: 6)
+TopicTutorial.create(topic_id: 1, tutorial_id: 7)
+TopicTutorial.create(topic_id: 1, tutorial_id: 8)
+TopicTutorial.create(topic_id: 1, tutorial_id: 9)
+TopicTutorial.create(topic_id: 1, tutorial_id: 10)
+TopicTutorial.create(topic_id: 1, tutorial_id: 11)
+TopicTutorial.create(topic_id: 1, tutorial_id: 12)
+TopicTutorial.create(topic_id: 2, tutorial_id: 13)
+TopicTutorial.create(topic_id: 2, tutorial_id: 14)
+TopicTutorial.create(topic_id: 2, tutorial_id: 15)
+TopicTutorial.create(topic_id: 2, tutorial_id: 16)
+TopicTutorial.create(topic_id: 3, tutorial_id: 17)
+TopicTutorial.create(topic_id: 3, tutorial_id: 18)
+TopicTutorial.create(topic_id: 5, tutorial_id: 19)
+TopicTutorial.create(topic_id: 5, tutorial_id: 20)
+TopicTutorial.create(topic_id: 5, tutorial_id: 21)
+TopicTutorial.create(topic_id: 4, tutorial_id: 22)
+TopicTutorial.create(topic_id: 4, tutorial_id: 23)
+
 Language.create(name: "Ruby")
 Language.create(name: "JavaScript")
 Language.create(name: "Java")
@@ -118,13 +167,41 @@ Language.create(name: "CSS")
 Language.create(name: "C++")
 Language.create(name: "C#")
 
-TopicTutorial.create(topic_id: 1, tutorial_id: 1)
-TopicTutorial.create(topic_id: 2, tutorial_id: 1)
-TopicTutorial.create(topic_id: 1, tutorial_id: 2)
-TopicTutorial.create(topic_id: 3, tutorial_id: 3)
-TopicTutorial.create(topic_id: 2, tutorial_id: 4)
-
 TutorialLanguage.create(language_id: 1, tutorial_id: 1)
 TutorialLanguage.create(language_id: 1, tutorial_id: 2)
-TutorialLanguage.create(language_id: 5, tutorial_id: 2)
 TutorialLanguage.create(language_id: 2, tutorial_id: 3)
+TutorialLanguage.create(language_id: 5, tutorial_id: 3)
+TutorialLanguage.create(language_id: 6, tutorial_id: 3)
+TutorialLanguage.create(language_id: 2, tutorial_id: 4)
+TutorialLanguage.create(language_id: 2, tutorial_id: 5)
+TutorialLanguage.create(language_id: 2, tutorial_id: 6)
+TutorialLanguage.create(language_id: 5, tutorial_id: 7)
+TutorialLanguage.create(language_id: 5, tutorial_id: 8)
+TutorialLanguage.create(language_id: 5, tutorial_id: 9)
+TutorialLanguage.create(language_id: 6, tutorial_id: 10)
+TutorialLanguage.create(language_id: 6, tutorial_id: 11)
+TutorialLanguage.create(language_id: 6, tutorial_id: 12)
+TutorialLanguage.create(language_id: 6, tutorial_id: 13)
+TutorialLanguage.create(language_id: 5, tutorial_id: 13)
+TutorialLanguage.create(language_id: 2, tutorial_id: 13)
+TutorialLanguage.create(language_id: 2, tutorial_id: 14)
+TutorialLanguage.create(language_id: 5, tutorial_id: 14)
+TutorialLanguage.create(language_id: 6, tutorial_id: 14)
+TutorialLanguage.create(language_id: 2, tutorial_id: 15)
+TutorialLanguage.create(language_id: 5, tutorial_id: 15)
+TutorialLanguage.create(language_id: 6, tutorial_id: 15)
+TutorialLanguage.create(language_id: 2, tutorial_id: 16)
+TutorialLanguage.create(language_id: 5, tutorial_id: 16)
+TutorialLanguage.create(language_id: 1, tutorial_id: 17)
+TutorialLanguage.create(language_id: 1, tutorial_id: 18)
+TutorialLanguage.create(language_id: 7, tutorial_id: 19)
+TutorialLanguage.create(language_id: 8, tutorial_id: 19)
+TutorialLanguage.create(language_id: 7, tutorial_id: 20)
+TutorialLanguage.create(language_id: 8, tutorial_id: 20)
+TutorialLanguage.create(language_id: 7, tutorial_id: 21)
+TutorialLanguage.create(language_id: 8, tutorial_id: 21)
+TutorialLanguage.create(language_id: 7, tutorial_id: 22)
+TutorialLanguage.create(language_id: 8, tutorial_id: 22)
+TutorialLanguage.create(language_id: 2, tutorial_id: 23)
+TutorialLanguage.create(language_id: 5, tutorial_id: 23)
+TutorialLanguage.create(language_id: 6, tutorial_id: 23)
